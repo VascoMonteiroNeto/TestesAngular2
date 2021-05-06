@@ -1,0 +1,8 @@
+<div class="container bg-dark text-white" style="height:100vh;">
+    <label for="nome" class="form-label">Produto</label>
+    <input class="form-control" name="nome" id="nome" [(ngModel)]="produto.nome">
+    <label for="preco" class="form-label">Preço</label>
+    <input class="form-control" name="preco" id="preco" [(ngModel)]="produto.preco">
+
+    <button type="button" class="btn btn-primary" (click)="testeOpt()">{{opt}}</button>
+</div>

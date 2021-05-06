@@ -1,0 +1,37 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Notebook i7",
+      "preco": 5500
+    },
+    {
+      "id": 2,
+      "nome": "Notebook i5",
+      "preco": 4500
+    },
+    {
+      "id": 3,
+      "nome": "Teclado",
+      "preco": "99"
+    },
+    {
+      "id": 4,
+      "nome": "Mouse",
+      "preco": "100",
+      "desconto": 10
+    },
+    {
+      "id": 5,
+      "nome": "Teclado sem fio",
+      "preco": "200",
+      "desconto": 10
+    },
+    {
+      "id": 6,
+      "nome": "Monitor",
+      "preco": "300",
+      "desconto": 10
+    }
+  ]
+}

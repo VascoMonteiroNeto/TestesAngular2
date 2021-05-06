@@ -1,0 +1,36 @@
+
+
+<div class="container bg-dark text-white" style="height:100vh;">
+<table class="table table-striped table-dark" *ngIf="carregarLoading; else carregando" >
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of produtos">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.nome | uppercase}}</td>
+        <td>{{item.preco| currency: "BRL"}}</td>
+        <td><button type="button" class="btn btn-primary" (click)="editar(item.id)">Editar</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="excluirItem(item.id)">Excluir</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #carregando >
+    <div id="preloader">
+      <div class="inner">
+         <div class="bolas">
+            <div></div>
+            <div></div>
+            <div></div>                    
+         </div>
+      </div>
+  </div>
+  </ng-template>
+</div>
